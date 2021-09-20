@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./src/css/desktop&mobile.css">
+
+    <!-- connect to boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-------------calender---------------->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css" rel="stylesheet">
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+
+    <!-- for mobile calendar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('mobile-calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+    </script>
+</head>
+
+
+
+<body>
+    <!-- desktop set up -->
+    <div class="Desktop-main">
+        <div class="Desktop-nav-bar">
+            <div id="DesktopSignOut" class="DesktopSignOut">
+                <div>
+                    <a href="./index.html"><img src="./src/image/sign-out-alt-solid.svg"></a>
+                </div>
+            </div>
+            <div class="about-me">
+                <div class="facebook">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./src/image/facebook-icon.svg"></a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./src/image/instagram-icon.svg"></a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/" target="_blank"><img src="./src/image/twitter-icon.svg"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="desktop-text-container">
+
+            <div id="desktop-text-area" class="desktop-text-area">
+
+                <form action="http://localhost:8080/" method="POST">
+                    <div id="desktopDuedate" class="desktopDuedate">
+                        <label for="desktopDuedate">Due Date:</label>
+                        <br>
+                        <input type="date" name="desktopDuedate" required>
+                    </div>
+
+                    <div id="desktopName" class="desktopName">
+                        <label for="desktopName'">Name:</label>
+                        <br>
+                        <input type="text" name="desktopName" required>
+                    </div>
+
+                    <div id="desktopDescription" class="desktopDescription">
+                        <label for="desktopDescription'">Description:</label>
+                        <br>
+                        <input type="text" name="desktopDescription" required>
+                    </div>
+
+                    <div id="desktopAssignedto" class="desktopAssignedto">
+                        <label for="desktopAssignedto'">Assigned:</label>
+                        <br>
+                        <input type="text" name="desktopAssignedto" required>
+                    </div>
+
+                    <div id="desktopStatus" class="desktopStatus">
+                        <label for="desktopStatus'">Status:</label>
+                        <br>
+                        <input type="text" name="desktopStatus" required>
+                    </div>
+            </div>
+
+            <div class="desktop-text-button">
+                <div class="desk-submit-button">
+                    <button id="desktop-show-data" class="desktop-show-data" type="reset">Show List</button>
+                    <button id="desktop-submit" class="desktop-submit" type="submit">Submit</button>
+                </div>
+            </div>
+            </form>
+        </div>
+
+        <div id="list-all-text-content" class="list-all-text-content">
+            <!-- <form id="list-all-text-content-form">
+                <div class="list-tetx">
+                    <div>NO:</div>
+                    <div>Date: </div>
+                    <div>Name:}</div>
+                    <div>Description: </div>
+                    <div>Assigned:</div>
+                    <div>Status:</div>
+                </div>
+                <div class="list-all-text-content-button">
+                    <button id="delete-button" class="delete-button"><img src="./src/image/trash-icon.svg"></button>
+
+                    <button id="edit-button" class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
+                </div>
+            </form> -->
+        </div>
+
+        <footer>
+            <div class="about-us">
+                <p>Design by : Matt, Kyle, Calvin</p>
+            </div>
+        </footer>
+        <script src="./src/js/desktop.js"></script>
+    </div>
+
+    <!-- setup-mobile-screen -->
+    <div class="mobile-screen ">
+
+        <nav class="navbar navbar-dark bg-dark ">
+            <!-- Navbar content -->
+            <div class="logo ">
+                <img src="src/image/b6cde81d1c489b0e20d85a6e06c5f8f9.png ">
+                <div class="logo-caption "><span>T</span>o-<span>D</span>o-<span>L</span>IST</div>
+            </div>
+            <div class="logout ">
+                <a href="./index.html">
+                    <button type="button ">Logout</button>
+                </a>
+            </div>
+        </nav>
+        <br>
+        <div class="for-calendar ">
+            <div id='mobile-calendar'></div>
+        </div>
+
+        <br>
+        <button id="show-button" class="show-button">Add List!</button>
+        <div id="list-Form" class="list-container ">
+
+            <div class="title">Please input your Informations!</div>
+            <br>
+            <form id="inputForm" action="http://localhost:8080/ " method="POST">
+
+                <div class="table">
+
+                    <table>
+                        <tr>
+                            <td>
+                                <lable for="due-date ">Due Date:</lable>
+                            </td>
+                            <td>
+                                <input type="date" size="50 " name="dueDate" id="due-date" placeholder="19/07/21 " required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="name ">Name:</lable>
+                            </td>
+                            <td>
+                                <input type="text" size="50" name="name" id="name" placeholder="Kyle" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="description">Description:</lable>
+                            </td>
+                            <td>
+                                <input type="text" size="50" name="description" id="description" placeholder="assignment " required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="status">Status:</lable>
+                            </td>
+                            <td>
+                                <input size="50 " name="status" id="status" placeholder="Options" list="op" required>
+                                <datalist id="op">
+                                <option value="REVIEW"></option>
+                                <option value="IN PROGRESS"></option>
+                                <option value="Done"></option>
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="assigned-to ">Assigned To:</lable>
+                            </td>
+                            <td>
+                                <input type="text " size="50 " name="assignedTo" id="assigned-to " placeholder="Everyone " required>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <br>
+
+                <div class="submit-button ">
+                    <div class="sbutton ">
+
+                        <button id="submit-button" type="submit">Submit!</button>
+
+                    </div>
+                    <div class="rbutton ">
+
+                        <button type="reset">Reset!</button>
+
+                    </div>
+                </div>
+            </form>
+
+            <br>
+
+        </div>
+        <div class="list-button ">
+            <button id="show-list" type="button">Show List!</button>
+            <div id="list" class="data-of-list">
+
+            </div>
+            <button id='hide-list-button' class='hide-list'>Hide List!</button>
+        </div>
+    </div>
+
+    <script src="./src/js/mobile.js"></script>
+</body>
+
+</html>

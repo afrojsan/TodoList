@@ -1,0 +1,369 @@
+/* top-nav-bar-setup */
+
+.Desktop-main {
+    background-image: linear-gradient(to bottom right, rgb(146, 217, 250), rgb(242, 253, 227));
+}
+
+.Desktop-nav-bar {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.DesktopSignOut {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/* desktop-text-area and button set up */
+
+.desktop-text-container {
+    border-bottom: 1px solid black;
+}
+
+.desktop-text-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.desktopDuedate label,
+.desktopName label,
+.desktopDescription label,
+.desktopAssignedto label,
+.desktopStatus label,
+.desktopId label {
+    font-size: 20px;
+}
+
+.desktopDuedate input,
+.desktopName input,
+.desktopDescription input,
+.desktopAssignedto input,
+.desktopStatus input,
+.id input {
+    width: 280px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.desktop-text-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.desktop-show-data,
+.desktop-submit {
+    width: 100px;
+    height: 28px;
+    margin: 10px;
+    border-radius: 20px
+}
+
+
+/* desktop list-all-text-content setup */
+
+.toDoData {
+    text-decoration: line-through;
+}
+
+.list-tetx {
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.list-all-text-content {
+    text-align: center;
+}
+
+.list-all-text-content-button {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.desktopDeleteButton {
+    width: 35px;
+    height: 35px;
+}
+
+.edit-button {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+
+/* footer setup */
+
+.about-us {
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+
+/* ----------------------- */
+
+
+/*------mobile screen------*/
+
+.mobile-screen {
+    display: none;
+    background-image: linear-gradient(to bottom right, rgb(146, 217, 250), rgb(242, 253, 227));
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+}
+
+.logo-caption {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-caption span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logout {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.logout button {
+    background-color: #3973be;
+    border: lightblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+/* list div of mobile screen */
+
+
+/*--------calendar---------*/
+
+#mobile-calendar {
+    width: 95%;
+    margin: auto;
+}
+
+
+/* Add button */
+
+.show-button {
+    background-color: #3973be;
+    border: lightblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+/*---------list information------------*/
+
+.list-container {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-container .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list-container .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table tr {
+    border: none;
+}
+
+.table input {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px;
+    height: 15px;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+}
+
+.submit-button .sbutton {
+    flex: 1;
+}
+
+.submit-button button {
+    background-color: #3973be;
+    border: lightblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.list-button button {
+    background-color: #3973be;
+    border: lightblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+/* list of form table */
+
+.data-of-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-of-list table {
+    border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.data-of-list table td {
+    padding: 15px;
+}
+
+.data-of-list table thead td {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #54585d;
+}
+
+.data-of-list table tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+}
+
+.data-of-list table tbody tr {
+    background-color: #f9fafb;
+}
+
+.data-of-list table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.for-list-button {
+    display: flex;
+}
+
+.hide-button {
+    background-color: #3973be;
+    border: lightblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+/* update list table */
+
+.data-of-list input {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px;
+    height: 15px;
+}
+
+.updatelist {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-button-pos {
+    display: flex;
+}
+
+.update-button-pos .updateButton {
+    flex: 1;
+}
+
+@media only screen and (max-width:768px) {
+    .Desktop-main {
+        display: none;
+    }
+    .mobile-screen {
+        display: block;
+        width: 100%;
+    }
+    .for-calendar {
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

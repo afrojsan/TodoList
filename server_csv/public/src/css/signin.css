@@ -1,0 +1,97 @@
+ html body {
+     height: 100%;
+ }
+ 
+ body {
+     display: -ms-flexbox;
+     display: -webkit-box;
+     display: flex;
+     -ms-flex-align: center;
+     -ms-flex-pack: center;
+     -webkit-box-align: center;
+     align-items: center;
+     -webkit-box-pack: center;
+     justify-content: center;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     background-position: center;
+     background-size: cover;
+     /* Center the image */
+     background-repeat: no-repeat;
+     /* Do not repeat the image */
+     background-image: url("../image/clear-sky-mountains-4k-k0-1125x2436.jpeg");
+ }
+ 
+ .form-signin {
+     width: 100%;
+     max-width: 330px;
+     padding: 15px;
+     margin: 0 auto;
+     background-image: url("../../desktop&mobile.html");
+ }
+ 
+ .form-signin .checkbox {
+     font-weight: 400;
+ }
+ 
+ .form-signin .form-control {
+     position: relative;
+     box-sizing: border-box;
+     height: auto;
+     padding: 10px;
+     font-size: 16px;
+ }
+ 
+ .form-signin .form-control:focus {
+     z-index: 2;
+ }
+ 
+ .form-signin input[type="email"] {
+     margin-bottom: -1px;
+     border-bottom-right-radius: 0;
+     border-bottom-left-radius: 0;
+ }
+ 
+ .form-signin input[type="password"] {
+     margin-bottom: 10px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+ }
+ 
+ .btn-block {
+     background-color: rgb(255, 255, 255);
+     text-decoration-color: rgba(0, 0, 0, 0.822);
+     width: 130px;
+     margin: 20px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .container {
+     display: -ms-flexbox;
+     display: -webkit-box;
+     display: flex;
+     -ms-flex-align: center;
+     -ms-flex-pack: center;
+     -webkit-box-align: center;
+     align-items: center;
+     -webkit-box-pack: center;
+     justify-content: center;
+ }
+ 
+ .form-check-label {
+     color: black;
+     font-size: 16px;
+     background-color: aliceblue;
+ }
+ 
+ @media screen and (max-width: 600px) {
+     body .text-center {
+         /* Center the image */
+         background-image: url("./img/clear-sky-mountains-4k-k0-1125x2436.jpeg");
+         background-position: center;
+         background-size: contain;
+         background-repeat: no-repeat;
+     }
+ }

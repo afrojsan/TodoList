@@ -1,0 +1,81 @@
+[33mcommit 4b484d2cd3544720d5ad5416d481604b7463dd47[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 5deed9f 02c50dd
+Author: mattnofsky21 <mattnofsky21@gmail.com>
+Date:   Fri Jul 16 10:29:48 2021 +0800
+
+    Merge branch 'main' of https://github.com/GenFewdGroup4/GenFewdGroup4.github.io
+
+[33mcommit 5deed9fe32d3a3dc521d4daaf0ff46d1588f3649[m
+Author: mattnofsky21 <mattnofsky21@gmail.com>
+Date:   Fri Jul 16 10:27:10 2021 +0800
+
+    matt-first commit
+
+[33mcommit 02c50dde349b62cb14da15d89da8a2e8f3e28837[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f3818d8 63784fa
+Author: afrojsan <chung86813@gmail.com>
+Date:   Fri Jul 16 10:26:19 2021 +0800
+
+    updated-desktop
+
+[33mcommit f3818d87e2020caa7d4f0b0a7a417275cb59bd9a[m
+Author: afrojsan <chung86813@gmail.com>
+Date:   Fri Jul 16 10:24:51 2021 +0800
+
+    updated-desktop>
+
+[33mcommit 63784fa9dcec4a7d63818800ff3979844b2e585a[m
+Author: DiveInDeep <kylecheung@DiveInDeepdeMacBook-Pro.local>
+Date:   Fri Jul 16 10:20:05 2021 +0800
+
+    updated on 16/07/21
+
+[33mcommit 4cf2a4ae374e4dbeeeb0fd1d4d49e2ba100d265c[m
+Merge: 25ea260 38d96e0
+Author: afrojsan <chung86813@gmail.com>
+Date:   Thu Jul 15 23:30:45 2021 +0800
+
+    added-desktop-todolist-label
+
+[33mcommit 25ea2606e38e4d2a7fa448c2c5a229cc20e35d14[m
+Merge: fbc3d69 7124473
+Author: afrojsan <chung86813@gmail.com>
+Date:   Thu Jul 15 23:28:35 2021 +0800
+
+    added-desktop-todolist-label
+
+[33mcommit 38d96e0f26fce7a2f86963f63abc4f0f94836380[m
+Author: DiveInDeep <kylecheung@DiveInDeepdeMacBook-Pro.local>
+Date:   Thu Jul 15 17:14:03 2021 +0800
+
+    changed on 15/07/21
+
+[33mcommit fbc3d69f620ce0795e6be406468935271bc9a8f6[m
+Author: afrojsan <chung86813@gmail.com>
+Date:   Thu Jul 15 16:10:17 2021 +0800
+
+    added-html
+
+[33mcommit 71244737677d51383129b24ea9ee7ae95d05b34f[m
+Author: DiveInDeep <kylecheung@DiveInDeepdeMacBook-Pro.local>
+Date:   Thu Jul 15 16:05:56 2021 +0800
+
+    test1
+
+[33mcommit 46c281626a35258d32a8d15b2fdb16be993a5271[m
+Author: DiveInDeep <kylecheung@DiveInDeepdeMacBook-Pro.local>
+Date:   Thu Jul 15 16:02:55 2021 +0800
+
+    test
+
+[33mcommit d270944c13def19cde567f9d775c2b37d294ab84[m
+Author: afrojsan <chung86813@gmail.com>
+Date:   Thu Jul 15 15:31:47 2021 +0800
+
+    added-html-css-src
+
+[33mcommit 41c4dc58910b9e8f135b76a4c55326dfb2f6bc1d[m
+Author: afrojsan <chung86813@gmail.com>
+Date:   Thu Jul 15 14:54:18 2021 +0800
+
+    first commit
