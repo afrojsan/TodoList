@@ -19,11 +19,15 @@
     margin: 10px;
 }
 
-.DesktopSignOut {
+.logoutLogo img {
     width: 40px;
     height: 40px;
     margin: 10px;
 }
+
+/* .logout{
+    display: flex;
+} */
 
 .about-me {
     display: flex;
